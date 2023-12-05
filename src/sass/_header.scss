@@ -1,0 +1,19 @@
+.header {
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $font-link;
+  color: $color-offWhite;
+  text-transform: capitalize;
+  & p {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    // @media only screen and (max-width: 47.9375em) {
+    //   font-size: 3.2rem;
+    // }
+  }
+}

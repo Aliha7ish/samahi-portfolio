@@ -1,0 +1,101 @@
+.landing-page {
+  max-height: 105vh;
+  position: relative;
+  color: $color-offWhite;
+  font-family: $font-link;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  @media only screen and (max-width: 56.875em) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 47.9375em) {
+    min-height: 80vh;
+  }
+  @media only screen and (max-width: 38.75em) {
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+
+  &-bg {
+    font-family: $font-bg;
+    font-size: 26vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $color-black;
+    filter: drop-shadow(0 4px 2px rgba(231, 208, 177, 0.4));
+
+    position: absolute;
+    bottom: auto;
+    user-select: none;
+    z-index: -2;
+
+    @media only screen and (max-width: 28.125em) {
+      font-size: 30vw;
+    }
+
+    &:nth-of-type(2) {
+      @media only screen and (max-width: 47.9375em) {
+        transform: translateY(30%) !important;
+      }
+      @media only screen and (max-width: 38.75em) {
+        transform: translateY(-20%) !important;
+      }
+    }
+  }
+  & .designer {
+    margin-top: 2.2vw;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: $color-white;
+
+    @media only screen and (max-width: 25.625em) {
+      font-size: 2.6rem;
+      margin-top: 3.6vw;
+    }
+  }
+}
+
+.circle-bg {
+  display: block;
+  width: 23vw;
+  height: 23vw;
+  position: absolute;
+  top: 0;
+  background: url("../images/user/MyPic.png"),
+    radial-gradient(
+      45.43% 45.43% at 50% 50%,
+      rgb(231 208 177 / 46%) 0%,
+      rgba(231, 208, 177, 0) 100%
+    );
+  opacity: 60%;
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 55% 15%;
+  z-index: -100;
+  transform: translateY(-13.6vw);
+  border-radius: 50%;
+
+  @media only screen and (max-width: 50em) {
+    width: 35vw;
+    height: 35vw;
+    transform: translateY(-23.6vw);
+  }
+  @media only screen and (max-width: 35em) {
+    width: 45vw;
+    height: 45vw;
+    transform: translateY(-32.6vw);
+  }
+  @media only screen and (max-width: 25.625em) {
+    width: 55vw;
+    height: 55vw;
+    transform: translateY(-41.6vw);
+  }
+}
+
+// #e7d0b1
+// #181818

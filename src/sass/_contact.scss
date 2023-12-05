@@ -1,0 +1,51 @@
+.footer-designers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  color: #d1cece;
+  margin: 3rem 0 1.5rem 0;
+  transform: translateX(-2.7vw);
+}
+.designer {
+  &-title {
+    display: block;
+    font-family: $font-header;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  &-name {
+    font-size: 2.8rem;
+    font-family: $font-gilroy-light;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  &-seperation {
+    display: block;
+    height: 10vw;
+    width: 1px;
+    background-color: $color-offWhite;
+  }
+}
+.get-contact-text {
+  font-size: 4vw;
+
+  text-align: center;
+  font-family: $font-header;
+  margin: 0 auto;
+  @media only screen and (max-width: 58.875em) {
+    font-size: 5vw;
+  }
+  @media only screen and (max-width: 47.9375em) {
+    font-size: 7vw;
+  }
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.contact-links-container {
+  margin-top: 3rem;
+}
